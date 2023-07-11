@@ -1,3 +1,3 @@
-#!usr/bin/pyhton3.11
+#!usr/bin/pyhton3
 print("Best School")
 
