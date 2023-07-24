@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 number = 98
-print(f" %d  Battery street",number)
+try: print(f"{number} Battery street")
+except ValueError as e: print(f"Error: {e}")
