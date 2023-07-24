@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-number= (98, 333, -98, 0, error)
-print(f"{number[0]} Battery street\n{number[1]} Battery street\n{number[2]} Battery street\n{number[3]} Battery street\n{number[4]} Battery street")
+num1, num2, num3, num4, num5, street =98, 333, -98, 0, error, "Battery Street"
+print(f"{num1} {street}\n{num2} {street}\n{num3} {street}\n{num4} {street}\n{num5} {street}")
