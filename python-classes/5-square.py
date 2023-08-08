@@ -6,7 +6,7 @@ class Square:
     """a class that defines a square by its size"""
 
     def __int__(self, size=0):
-        """Initialize the square with a private instance attribute size"""
+        """Iiinitialize the square with a private instance attribute size"""
         self.size = size
 
     def area(self):
@@ -19,4 +19,4 @@ class Square:
             print()
         else:
             for i in range(self.__size):
-                print("#" * self.__size)
+            print("".join(["#" for j in range(self.__size)]))
