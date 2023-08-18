@@ -1,59 +1,59 @@
 #!/usr/bin/python3
-"""Module that defines a Square class"""
+
+"""Method defining a class Square."""
 
 
 class Square:
+    """Represent a square."""
 
-    # Private instance attributes
-    __size = 0
-    __position = (0, 0)
+    def __init__(self, size=0, position=(0, 0)):
+        """Initialize a new square.
+        Args:
+            size (int): The size of the new square.
+            position (int, int): The position of the new square.
+        """
+        self.size = size
+        self.position = position
 
-    # Property to retrieve the size
     @property
     def size(self):
-        return self.__size
+        """Get/set the current size of the square."""
+        return (self.__size)
 
-    # Property setter to set the size
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
-    # Property to retrieve the position
     @property
     def position(self):
-        return self.__position
+        """Get/set the current position of the square."""
+        return (self.__position)
 
-    # Property setter to set the position
     @position.setter
     def position(self, value):
-        if not isinstance(value, tuple) or len(value) != 2:
+        if (not isinstance(value, tuple) or
+                len(value) != 2 or
+                not all(isinstance(num, int) for num in value) or
+                not all(num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
-        for i in value:
-            if i < 1:
-                raise ValueError("position must be a tuple of 2 positive integers")
         self.__position = value
 
-    # Instantiation with optional size and optional position
-    def __init__(self, size=0, position=(0, 0)):
-        self.size = size
-        self.position = position
-
-    # Public instance method to return the current square area
     def area(self):
-        return self.__size * self.__size
+        """Return the current area of the square."""
+        return (self.__size * self.__size)
 
-    # Public instance method to print the square with the character #:
     def my_print(self):
+        """Print the square with the # character."""
         if self.__size == 0:
             print("")
-        else:
-            for i in range(self.__size):
-                for j in range(self.__position[1]):
-                    print(" ", end="")
-                for j in range(self.__size):
-                    print("#", end="")
-                print("")
+            return
+
+        [print("") for i in range(0, self.__position[1])]
+        for i in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
+            print("")
