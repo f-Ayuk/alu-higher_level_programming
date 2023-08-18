@@ -28,11 +28,12 @@ class Square:
         return self.__size * self.__size
 
     def my_print(self):
-        """Print the square with the character #"""
+        """prints the square
+        Returns:
+            None
+        """
         if self.__size == 0:
-            print("")
-        else:
-            for i in range(self.__size):
-                for j in range(self.__size):
-                    print("#", end="")
-                print("")
+            print()
+            return
+        for i in range(self.__size):
+            print("".join(["#" for j in range(self.__size)]))
