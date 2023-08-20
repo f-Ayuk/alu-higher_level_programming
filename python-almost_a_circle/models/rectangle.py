@@ -3,7 +3,7 @@
 
 
 class Rectangle(Base):
-    """Represent a rectangle."""
+    """Defining a rectangle."""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialising a new Rectangle.
@@ -141,6 +141,4 @@ class Rectangle(Base):
 
     def __str__(self):
         """Return the print() and str() representation of the Rectangle."""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                                                       self.x, self.y,
-                                                       self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
