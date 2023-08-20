@@ -111,7 +111,7 @@ class Rectangle(Base):
                 elif a == 3:
                     self.x = arg
                 elif a == 4:
-                  self.y = arg
+                    self.y = arg
                 a += 1
 
         elif kwargs and len(kwargs) != 0:
@@ -142,4 +142,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """Return the print() and str() representation of the Rectangle."""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+        return {"id": self.id,
+                "width": self.width,
+                "height": self.height,
+                "x": self.x,
+                "y": self.y
+                }
