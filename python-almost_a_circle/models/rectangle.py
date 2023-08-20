@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Module for a rectangle from base"""
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -110,7 +111,7 @@ class Rectangle(Base):
                 elif a == 3:
                     self.x = arg
                 elif a == 4:
-                    self.y = arg
+                  self.y = arg
                 a += 1
 
         elif kwargs and len(kwargs) != 0:
