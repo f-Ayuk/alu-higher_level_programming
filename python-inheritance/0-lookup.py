@@ -3,6 +3,6 @@
 
 
 def lookup(obj):
-    """dir() is a built-in function that returns a list of names in the object's namespace"""
+    """dir(), a built-in function which returns list of names in the object's namespace"""
 
     return dir(obj)
