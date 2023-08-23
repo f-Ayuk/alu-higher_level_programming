@@ -7,4 +7,4 @@ class MyList(list):
 
     def print_sorted(self):
         """Prints the list, but sorted (ascending sort)"""
-        print(sorted(self)) # sorted() is a built-in function that returns a new sorted list
+        print(sorted(self))  #use sorted() to get a new sorted list
