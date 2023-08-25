@@ -2,6 +2,9 @@
 """contains the class BaseGeometry and base subclass Rectangle"""
 
 
+Rectangle = __import__('9-rectangle').Rectangle
+
+
 class Square(Rectangle):
     """A class that represents a square geometry."""
 
