@@ -58,8 +58,9 @@ Checking for non-integer types:
 	 Traceback (most recent call last):
          ...
          TypeError: bool must be an integer
-	 >>> b.integer_validator("float", 0)
-         Traceback (most recent call last):
+	 with pytest.raises(TypeError):
+		 >>> b.integer_validator("float", 0)
+         	Traceback (most recent call last):
          ...
          TypeError: float must be an integer
 	 >>> b.integer_validator("complex", complex(1, 1))
