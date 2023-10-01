@@ -5,8 +5,8 @@ if (isNaN(size)) { // check if the result is NaN, which means the argument can't
   console.log('Missing size'); // print "Missing size" if the argument can't be converted
 } else { // otherwise
   const square = ''; // create an empty string to store the square
-  for (let i = 0; i < size; i++) { // use a for loop to iterate over the rows of the square
-    for (let j = 0; j < size; j++) { // use another for loop to iterate over the columns of the square
+  for (const i = 0; i < size; i++) { // use a for loop to iterate over the rows of the square
+    for (const j = 0; j < size; j++) { // use another for loop to iterate over the columns of the square
       square += 'X'; // append an "X" character to the square string for each column
     }
     square += '\n'; // append a newline character to the square string for each row
