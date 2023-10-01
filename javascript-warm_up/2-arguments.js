@@ -1,4 +1,4 @@
-#!/usr/nin/node
+#!/usr/bin/node
 
 let args = process.argv.slice(2); // get the array of arguments passed to the script, excluding the first two elements (node and file name)
 if (args.length === 0) { // check if the array is empty
