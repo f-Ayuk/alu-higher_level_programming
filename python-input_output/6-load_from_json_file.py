@@ -4,9 +4,7 @@
 import json
 
 def load_from_json_file(filename):
-    # Open the file in read mode using the with statement
+    """Create a Python object from a JSON file."""
     with open(filename, 'r') as f:
-        # Load the JSON data from the file using the json.load() method
         obj = json.load(f)
-    # Return the object
     return obj
