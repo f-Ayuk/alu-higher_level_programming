@@ -1,6 +1,6 @@
 -- Select the score and the count of records with that score from second_table
 
-SELECT score, COUNT (score) AS number
+SELECT score, COUNT(score) AS number
 FROM second_table
 
 -- Group by score
