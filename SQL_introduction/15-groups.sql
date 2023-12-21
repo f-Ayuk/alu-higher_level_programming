@@ -10,4 +10,3 @@ GROUP BY score
 -- Order by number in descending order
 
 ORDER BY number DESC;
-
