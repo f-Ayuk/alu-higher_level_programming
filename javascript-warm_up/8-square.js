@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 /* const arg = process.argv[2];
 if (isNaN(arg)) { // check if the result is NaN, which means the argument can't be converted to an integer
   console.log('Missing size'); // print "Missing size" if the argument can't be converted
@@ -13,7 +12,6 @@ if (isNaN(arg)) { // check if the result is NaN, which means the argument can't 
       }
   }
 } */
-
 // Get the first argument as a number
 const size = Number(process.argv[2]);
 // Check if the argument is a valid positive integer
