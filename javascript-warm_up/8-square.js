@@ -17,7 +17,7 @@ if (isNaN(arg)) { // check if the result is NaN, which means the argument can't 
 // Get the first argument as a number
 let size = Number(process.argv[2]);
 // Check if the argument is a valid positive integer
-if (isNaN(size) || size <= 0) {
+if (!Number.isInteger(size) || size <= 0) {
   // Print "Missing size"
   console.log("Missing size");
 } else {
@@ -35,4 +35,5 @@ if (isNaN(size) || size <= 0) {
   }
   // Print the output
   console.log(output);
+  process.stdout.write(output);
 }
