@@ -34,6 +34,5 @@ if (!Number.isInteger(size) || size <= 0) {
     output += "\n";
   }
   // Print the output
-  console.log(output);
   process.stdout.write(output);
 }
