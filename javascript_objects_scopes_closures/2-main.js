@@ -21,7 +21,7 @@ console.log('Rectangle 'r4);
 console.log(r4.width);
 console.log(r4.height);
 
-const r5 = new Rectangle();
+const r5 = new Rectangle(3, 3);
 console.log('Rectangle 'r5);
 console.log(r5.width);
 console.log(r5.height);
