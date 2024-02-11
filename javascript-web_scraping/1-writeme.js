@@ -1,4 +1,4 @@
-#!/usr/bin
+#!/usr/bin/node
 
 // Import the file system module
 const fs = require('fs');
