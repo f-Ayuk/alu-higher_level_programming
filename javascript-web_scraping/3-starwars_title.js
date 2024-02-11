@@ -12,7 +12,7 @@ const apiUrl = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
 // Make a GET request to the API
 request(apiUrl, (error, response, body) => {
   // If the request was successful, print the movie title
-  if (response.statusCode == 200) {
+  if (response.statusCode === 200) {
     // Parse the JSON data from the body
     const data = JSON.parse(body);
 
