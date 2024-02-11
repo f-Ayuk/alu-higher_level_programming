@@ -12,7 +12,7 @@ const wedgeId = 18;
 // Make a GET request to the API
 request(apiUrl, (error, response, body) => {
   // If the request was successful, count the movies
-  if (response.statusCode == 200) {
+  if (response.statusCode === 200) {
     // Parse the JSON data from the body
     const data = JSON.parse(body);
 
@@ -23,7 +23,7 @@ request(apiUrl, (error, response, body) => {
     let count = 0;
 
     // Loop through the movies
-    for (let movie of movies) {
+    for (const movie of movies = movies) {
       // Get the array of characters from the movie
       const characters = movie.characters;
 
