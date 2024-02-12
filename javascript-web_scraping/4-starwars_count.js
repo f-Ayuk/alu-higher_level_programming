@@ -43,5 +43,4 @@ if (err){
         // Otherwise, print an error message
         console.error(`Error: ${response.statusCode}`);
       }
-    }
-  });
+    });
