@@ -11,10 +11,8 @@ const wedgeId = 18;
 
 // Make a GET request to the API
 request(apiUrl, function(error, response, body) {
-if (err){
-  console.error(err);
-  } else
-      // If the request was successful, count the movies
+  if (!error){
+    // If the request was successful, count the movies
       if (response.statusCode === 200) {
         // Parse the JSON data from the body
         const data = JSON.parse(body);
