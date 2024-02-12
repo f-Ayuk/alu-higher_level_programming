@@ -28,7 +28,7 @@ request(apiUrl, function (error, response, body) {
       const characters = movie.characters;
 
       // Check if Wedge Antilles is in the characters array
-      if (characters.includes(`https://swapi-api.alx-tools.com/api/people/${wedgeId}/`)) {
+      if (characters.includes(`https://swapi-api.alx-tools.com/api/films/${wedgeId}/`)) {
         // Increment the counter
         count++;
       }
