@@ -10,7 +10,8 @@ const apiUrl = process.argv[2];
 const wedgeId = 18;
 
 // Make a GET request to the API
-request(apiUrl, if (err){
+request(apiUrl, 
+if (err){
   console.error(err);
   } else { (error, response, body) => {
       // If the request was successful, count the movies
