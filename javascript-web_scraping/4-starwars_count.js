@@ -43,4 +43,5 @@ request(apiUrl, (error, response, body) => {
       // Otherwise, print an error message
       console.error(`Error: ${response.statusCode}`);
     }
-  });
+  }
+});
