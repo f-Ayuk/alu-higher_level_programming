@@ -10,7 +10,10 @@ const movieId = process.argv[2];
 const apiUrl = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
 
 // Make a GET request to the API
-request(apiUrl, (error, response, body); => {
+request(apiUrl, (error, response, body) => {
+  if (error){
+    console.error(error);
+  }
   // If the request was successful, print the movie title
   if (response.statusCode === 200) {
     // Parse the JSON data from the body
