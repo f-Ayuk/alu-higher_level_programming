@@ -9,4 +9,4 @@ const url = process.argv[2];
 const filePath = process.argv[3];
 
 // Make a GET request to the URL and pipe the response to the file
-request(url).pipe(fs.createWriteStream(filePath, {encoding: 'utf8' } ));
+request(url).pipe(fs.createWriteStream(filePath, { encoding: 'utf8' }));
