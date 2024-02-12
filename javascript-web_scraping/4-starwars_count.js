@@ -10,7 +10,7 @@ const apiUrl = process.argv[2];
 const wedgeId = 18;
 
 // Make a GET request to the API
-request(apiUrl, function(error, response, body) => {
+request(apiUrl, function(error, response, body) {
 if (err){
   console.error(err);
   } else
