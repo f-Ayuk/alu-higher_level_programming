@@ -10,8 +10,8 @@ const apiUrl = process.argv[2];
 const wedgeId = 18;
 
 // Make a GET request to the API
-request(apiUrl, function(error, response, body) {
-  if (!error){
+request(apiUrl, function (error, response, body) {
+  if (!error) {
     // If the request was successful, count the movies
     // Parse the JSON data from the body
     const data = JSON.parse(body);
@@ -31,13 +31,13 @@ request(apiUrl, function(error, response, body) {
       if (characters.includes(`https://swapi-api.alx-tools.com/api/people/${wedgeId}/`)) {
         // Increment the counter
         count++;
-        }
       }
-
-      // Print the number of movies with Wedge Antilles
-      console.log(count);
-    } else {
-      // Otherwise, print an error message
-      console.error(`Error: ${response.statusCode}`);
     }
-  });
+
+    // Print the number of movies with Wedge Antilles
+    console.log(count);
+  } else {
+    // Otherwise, print an error message
+    console.error(`Error: ${response.statusCode}`);
+  }
+});
