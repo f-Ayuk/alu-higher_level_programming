@@ -19,7 +19,7 @@ request(apiUrl, (err, res, body) => {
     const results = {};
 
     // Loop through the data array
-    for (let task of data) {
+    for (const task of data) {
       // Get the user id and the completed status from the task
       const userId = task.userId;
       const completed = task.completed;
